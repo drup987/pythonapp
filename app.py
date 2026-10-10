@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_geek():
-    return 'successfully deployed python application through jenkins!!!!!!!!!, added webhook'
+    return 'successfully deployed python application through jenkins!, added webhook'
 @app.route('/hi')
 def hell():
-    return '<h1>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii from Flask & Docker</h1>'
+    return '<h1>Hifrom Flask & Docker</h1>'
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
